@@ -1,5 +1,6 @@
 # HoYoLab 表情包收集
 爬取和整理HoYoLab（米游社）上的表情包。（会尽快更新的）
+[直达下载链接](https://github.com/iBobbyTS/HoYoLabStickerDownload/releases/tag/2025.6.3)
 
 ## 目录
 - [介绍](#介绍)
