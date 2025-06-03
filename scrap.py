@@ -27,7 +27,7 @@ def main():
     # Extract image URLs from the HTML content
     name, image_urls = extract_image_urls(html)
     # Create a directory to save the images
-    os.makedirs(name, exist_ok=True)
+    os.makedirs(os.path.join('Download', name), exist_ok=True)
     # Print the extracted image URLs
     count = 0
     for url in image_urls:
@@ -35,7 +35,7 @@ def main():
             continue
         count += 1
         url = url.split('?')[0]
-        filename = os.path.join(name, os.path.basename(url))
+        filename = os.path.join('Download', name, os.path.basename(url))
         # Download the image
         response = requests.get(url)
         if response.status_code == 200:
