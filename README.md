@@ -6,14 +6,14 @@
 </p>
 
 <p align="center">
-  <img src="HoYoLab表情包/原神/派蒙的画作（官方）/1-1.0/派蒙%20-%201.png" alt="流萤" width="30%" />
-  <img src="HoYoLab表情包/崩坏：星穹铁道/角色/帕姆/2023-7-13/帕姆%20-%205.png" alt="柏妮思" width="30%" />
+  <img src="HoYoLab表情包/原神/派蒙的画作（官方）/1-1.0/派蒙%20-%201.png" alt="流萤" width="20%" />
+  <img src="HoYoLab表情包/崩坏：星穹铁道/角色/帕姆/2023-7-13/帕姆%20-%205.png" alt="柏妮思" width="20%" />
 </p>
 
 <p align="center">
-  <img src="HoYoLab表情包/原神/派蒙的画作（官方）/38-5.3/茜特菈莉%20-%201.png" alt="茜特菈莉" width="20%" />
-  <img src="HoYoLab表情包/崩坏：星穹铁道/帕姆展览馆（按版本）/2.3 再见，匹诺康尼/流萤%20-%201.png" alt="流萤" width="20%" />
-  <img src="HoYoLab表情包/绝区零/丽都漫步/1.2/柏妮思%20-%201.png" alt="柏妮思" width="20%" />
+  <img src="HoYoLab表情包/原神/派蒙的画作（官方）/38-5.3/茜特菈莉%20-%201.png" alt="茜特菈莉" width="10%" />
+  <img src="HoYoLab表情包/崩坏：星穹铁道/帕姆展览馆（按版本）/2.3 再见，匹诺康尼/流萤%20-%201.png" alt="流萤" width="10%" />
+  <img src="HoYoLab表情包/绝区零/丽都漫步/1.2/柏妮思%20-%201.png" alt="柏妮思" width="10%" />
 </p>
 
 ## 目录
