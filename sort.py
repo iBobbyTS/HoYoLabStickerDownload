@@ -6,9 +6,8 @@ def main():
     # 创建文件夹
     if os.path.exists('release'):
         print('release文件夹已存在，是否删除？(y/n)')
-        shutil.rmtree('release')
         if input().lower() == 'y':
-            pass
+            shutil.rmtree('release')
         else:
             exit(0)
 
