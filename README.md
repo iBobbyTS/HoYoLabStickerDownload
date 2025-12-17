@@ -38,11 +38,13 @@
 - 未定事件簿
 
 ## 脚本使用
+按以下顺序执行
 ### `scrap.py`
 用于抓取 HoYoLab 上的表情包，需要自己去 HoYoLab 上进入[发帖页面](https://www.hoyolab.com/newArticle/1)，然后点击表情包、+，然后开始检查元素，找到表情包的div。
 ![抓取表情包](img/sticker_grid.png)
 复制整个div，粘贴到`scrap.py`的`sticker_grid`的html变量中，运行即可下载。
 
+然后手动把Downloaded文件夹里的表情包移动到对应的游戏文件夹下，为文件夹重命名为游戏版本号+版本名，给里面每个图片都命名为角色+序号（参考以往文件夹）。
 ### `sort.py`
 按照`character.json`的规则整理到`release`文件夹。
 
