@@ -49,6 +49,8 @@ def main():
                             shutil.copy(src, dst)
                             idx = sticker[2].index(file)
                             sticker[2][idx] = None
+    # 打印剩余表情包并保存到日志
+    log = []
     for sticker in stickers:
         if '.DS_Store' in sticker[2]:
             sticker[2].remove('.DS_Store')
@@ -56,7 +58,11 @@ def main():
             sticker[2].remove(None)
         if sticker[2]:
             for file in sticker[2]:
-                print(os.path.join(*(sticker[0].split('/')[1:]), file))
+                line = os.path.join(*(sticker[0].split('/')[1:]), file)
+                log.append(line)
+                print(line)
+    with open('release/未使用表情包.log', 'w', encoding='utf-8') as f:
+        f.write('\n'.join(log))
 
 
 if __name__ == '__main__':
