@@ -6,8 +6,8 @@
 </p>
 
 <p align="center">
-  <img src="HoYoLab表情包/原神/派蒙的画作（官方）/1-1.0%20捕风的异乡人/派蒙%20-%201.png" alt="流萤" width="20%" />
-  <img src="HoYoLab表情包/崩坏：星穹铁道/角色/帕姆/2023-7-13/帕姆%20-%205.png" alt="柏妮思" width="20%" />
+  <img src="HoYoLab表情包/原神/派蒙的画作（官方）/1-1.0%20捕风的异乡人/派蒙%20-%201.png" alt="派蒙" width="20%" />
+  <img src="HoYoLab表情包/崩坏：星穹铁道/角色/帕姆/2023-7-13/帕姆%20-%205.png" alt="帕姆" width="20%" />
 </p>
 
 <p align="center">
