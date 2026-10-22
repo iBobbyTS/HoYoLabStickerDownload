@@ -2,6 +2,20 @@ import os
 import json
 import shutil
 
+def matches_character(filename, character, known_characters):
+    """优先匹配完整角色字段，避免基础角色吞掉同名衍生形态。
+
+    保留「月桂 - （瑶瑶） - 1」等关联命名；没有完整角色字段时，
+    仍沿用旧的子串规则，兼容「草史莱姆」等历史文件名。
+    """
+    stem = os.path.splitext(filename)[0]
+    fields = {part.strip().strip("（）()") for part in stem.split(" - ")}
+    exact = fields & known_characters
+    if exact:
+        return character in exact
+    return character in filename
+
+
 def main():
     # 创建文件夹
     if os.path.exists('release'):
@@ -25,6 +39,7 @@ def main():
     # 循环游戏
     for game in games:
         folders = config[game].keys()
+        known_characters = {name for names in config[game].values() for name in names if name}
         for folder in folders:
             folder_path = os.path.join('release', game, folder)
             characters = config[game][folder]
@@ -42,7 +57,7 @@ def main():
                                 continue
                     file_list = sticker[2]
                     for file in file_list:
-                        if file is not None and character in file:
+                        if file is not None and matches_character(file, character, known_characters):
                             # 复制表情包
                             src = os.path.join(sticker[0], file)
                             dst = os.path.join(character_path, '_'.join([*(sticker[0].split('/')[2:]), file]))
@@ -67,3 +82,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
